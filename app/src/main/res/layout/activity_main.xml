@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/recurso_4mdpi"
+    android:gravity="center|top"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/mi_lugar_seguro"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:src="@mipmap/recurso_1mdpi"></ImageView>
+
+    <ImageView
+        android:id="@+id/escole"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@mipmap/recurso_2mdpi"></ImageView>
+
+    <ImageView
+        android:id="@+id/google_login"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:onClick="PickNickname"
+        android:src="@mipmap/recurso_3mdpi"></ImageView>
+
+
+</LinearLayout>

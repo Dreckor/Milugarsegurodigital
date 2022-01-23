@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".breath"
+    android:background="@mipmap/recurso_6mdpi"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar" />
+
+    <ImageView
+        android:id="@+id/activityImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/before_start"
+        android:src="@mipmap/recurso_15mdpi"></ImageView>
+    <ImageView
+        android:id="@+id/breath_desc"
+        android:layout_width="350dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="0dp"
+        android:src="@mipmap/recurso_19mdpi"
+        android:contentDescription="@string/before_start"></ImageView>
+
+    <ImageView
+        android:id="@+id/bf1"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/before_start"
+        android:src="@mipmap/recurso_21mdpi"></ImageView>
+
+</LinearLayout>

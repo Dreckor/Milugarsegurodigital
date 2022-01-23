@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mi lugar seguro digital</string>
+    <string name="nickname">Elije tu Nickname</string>
+    <string name="nickname_description">Introduce tu nombre o el de tu hijo(a) aquí.
+Podrás cambiarlo si deseas en los ajustes.</string>
+    <string name="nickname_hint">Crea o ingresa tu nickname</string>
+    <string name="understod">Entendido</string>
+    <string name="before_start">Antes de iniciar, elige
+un lugar tranquilo.</string>
+    <string name="start">Empezar</string>
+    <string name="help">Ayuda</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".how_do_you_feel"
+    android:background="@mipmap/recurso_6mdpi"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar2" />
+    <ImageView
+        android:id="@+id/next_dialog"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="0dp"
+        android:src="@mipmap/estas_listo_sigamosmdpi"
+        android:contentDescription="@string/before_start"></ImageView>
+
+    <ImageView
+        android:id="@+id/activityImg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/before_start"
+        android:src="@mipmap/imagen_camaramdpi"></ImageView>
+    <ImageView
+        android:id="@+id/breath_desc"
+        android:layout_width="350dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="0dp"
+        android:src="@mipmap/como_te_sientesmdpi"
+        android:contentDescription="@string/before_start"></ImageView>
+
+    <ImageView
+        android:id="@+id/bf1"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/before_start"
+        android:src="@mipmap/recurso_40mdpi"></ImageView>
+
+</LinearLayout>
