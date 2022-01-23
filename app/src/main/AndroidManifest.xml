@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".describe"></activity>
+        <activity android:name=".final_solution_choose"></activity>
+        <activity android:name=".solutions" />
+        <activity android:name=".describe" />
         <activity android:name=".pick_your_emotion" />
         <activity android:name=".how_do_you_feel" />
         <activity android:name=".breath" />

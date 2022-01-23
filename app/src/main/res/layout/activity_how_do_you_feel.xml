@@ -28,6 +28,14 @@
         android:layout_marginBottom="30dp"
         android:contentDescription="@string/before_start"
         android:src="@mipmap/imagen_camaramdpi"></ImageView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
     <ImageView
         android:id="@+id/breath_desc"
         android:layout_width="350dp"

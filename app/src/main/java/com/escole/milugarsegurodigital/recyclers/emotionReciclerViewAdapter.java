@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.escole.milugarsegurodigital.R;
 
 import com.escole.milugarsegurodigital.breath;
+import com.escole.milugarsegurodigital.describe;
 import com.escole.milugarsegurodigital.models.activity;
 import com.escole.milugarsegurodigital.models.emotion;
 
@@ -50,8 +51,9 @@ public class emotionReciclerViewAdapter extends RecyclerView.Adapter<emotionReci
                 }else{
                     selectedItems.put(position,true);
                     view.setSelected(true);
-                    Intent intent = new Intent(view.getContext(), breath.class);
+                    Intent intent = new Intent(view.getContext(), describe.class);
                     intent.putExtra("image", emotionList.get(position).getImage());
+                    intent.putExtra("emotion",emotionList.get(position).getEmotion());
                     view.getContext().startActivity(intent);
                 }
             }
