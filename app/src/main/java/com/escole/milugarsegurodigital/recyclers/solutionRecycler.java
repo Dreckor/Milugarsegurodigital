@@ -1,16 +1,19 @@
 package com.escole.milugarsegurodigital.recyclers;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.escole.milugarsegurodigital.R;
+import com.escole.milugarsegurodigital.final_solution_choose;
 import com.escole.milugarsegurodigital.models.solution;
 import com.escole.milugarsegurodigital.solutions;
 
@@ -42,6 +45,11 @@ public class solutionRecycler extends RecyclerView.Adapter<solutionRecycler.View
                     selectedItems.delete(position);
                     v.setSelected(false);
                 }else{
+                    selectedItems.put(position,true);
+                    v.setSelected(true);
+                    Intent intent = new Intent(v.getContext(), final_solution_choose.class);
+                    intent.putExtra("name", position);
+                    v.getContext().startActivity(intent);
 
                 }
             }

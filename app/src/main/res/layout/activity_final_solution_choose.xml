@@ -1,9 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".final_solution_choose">
+    tools:context=".final_solution_choose"
+    android:background="@mipmap/recurso_6mdpi"
+    android:gravity="top|center"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/actionbar" />
+
+
+    <ImageView
+        android:id="@+id/final_img"
+        android:layout_width="350dp"
+        android:layout_height="380dp"
+        android:src="@mipmap/img_cuentale_a_papamdpi"
+        android:padding="15dp"
+        android:visibility="visible"></ImageView>
+    <EditText
+        android:id="@+id/que_solucion"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:background="@mipmap/mi_solucionmdpi"
+        android:padding="15dp"
+        android:visibility="gone"></EditText>
+    <ImageView
+        android:id="@+id/grabar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/grabar_audiomdpi"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/finalizar_btn"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2B57A2"
+        android:fontFamily="@font/poppins_semibold"
+        android:textAlignment="center"
+        android:background="@drawable/custom_btn"
+        android:text="@string/Terminar"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:onClick="sethide"
+        android:visibility="gone"></Button>
+</LinearLayout>
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:layout_alignParentBottom="true">
+        <ImageView
+
+        android:id="@+id/final_desc"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_gravity="top"
+        android:src="@mipmap/en_compania_de_un_adultomdpi"
+        android:contentDescription="@string/before_start"
+            android:visibility="visible"></ImageView>
+    <ImageView
+        android:id="@+id/final_character"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_gravity="right"
+        android:src="@mipmap/final_charactermdpi"
+        android:contentDescription="@string/before_start"></ImageView>
+</LinearLayout>
+</RelativeLayout>
