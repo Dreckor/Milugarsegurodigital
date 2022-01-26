@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -19,6 +24,13 @@
         android:layout_marginBottom="60dp"
         android:contentDescription="@string/before_start"
         android:src="@mipmap/recurso_15mdpi"></ImageView>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
     <ImageView
         android:id="@+id/breath_desc"
         android:layout_width="350dp"
@@ -30,8 +42,8 @@
 
     <ImageView
         android:id="@+id/bf1"
-        android:layout_width="400dp"
-        android:layout_height="250dp"
+        android:layout_width="430dp"
+        android:layout_height="280dp"
         android:layout_marginTop="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
@@ -39,3 +51,4 @@
         android:src="@mipmap/recurso_21mdpi"></ImageView>
 
 </LinearLayout>
+</RelativeLayout>
